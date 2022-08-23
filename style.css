@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+  
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-h1{
+  margin-top: 10px;
+  color:hsl(229, 6%, 66%);
+  font-weight: normal;
+ } 
+ .second-h1{
+  color: hsl(234, 12%, 34%)  ;
+  letter-spacing: 1.2px;
+  margin-top: 7px;
+ }
+ .head-paragraph{
+  margin-top: 20px ;
+  font-size: 14px;
+  color: hsl(229, 0%, 50%) ;
+  text-align: center;
+ }
+ .second-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  column-gap: 20px;
+ }
+.first-div,.second-div,.third-div,.fourth-div{
+  padding: 0px 15px 15px 15px;
+  max-width: 250px;
+  font-size: 12px;
+  box-shadow: rgb(136, 165, 191) 6px 2px 16px 0px ,
+   rgba(255, 255, 255, 0.858) -6px -2px 16px 0px;color:hsl(229, 6%, 66%) ;
+
+}
+.sub{
+  display: grid;
+  row-gap: 20px;
+}
+.first-div{
+  width: 250px;
+  height: 180px;
+  margin-top: 30px;
+}
+.fourth-div{
+  width: 250px;
+  height: 180px;
+  margin-top: 30px;
+}
+h2{
+  font-size: 14.5px;
+  color: hsl(234, 12%, 34%) ;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+img{
+ float: right;
+ width: 25%;
+ margin-top: 30px;
+}
+.line1{
+  background-color:  hsl(180, 62%, 55%);
+  }
+.line2{
+  background-color: hsl(0, 78%, 62%);
+  }
+.line3{
+  background-color:  hsl(34, 97%, 64%);
+  }
+.line4{
+  background-color:  hsl(212, 86%, 64%); 
+  }
+@media only screen and (max-width:420px){
+.second-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub{
+  margin-top: 20px;
+}
+}
